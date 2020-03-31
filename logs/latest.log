@@ -1,51 +1,821 @@
-[20:38:29] [main/ERROR]: Unable to bootstrap registry 'minecraft:chunk_generator_type'
-[20:38:29] [main/ERROR]: Registry 'minecraft:chunk_generator_type' was empty after loading
-[20:38:30] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[20:38:30] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[20:38:30] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[20:38:30] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[20:38:30] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[20:38:30] [Server thread/INFO]: Starting minecraft server version 20w13b
-[20:38:30] [Server thread/INFO]: Loading properties
-[20:38:30] [Server thread/INFO]: Default game type: SURVIVAL
-[20:38:30] [Server thread/INFO]: Generating keypair
-[20:38:30] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:38:30] [Server thread/INFO]: Using default channel type
-[20:38:34] [Server thread/INFO]: Preparing level "world"
-[20:38:34] [Server thread/INFO]: Reloading ResourceManager: Default
-[20:38:35] [Server thread/INFO]: Loaded 6 recipes
-[20:38:35] [Server thread/INFO]: Loaded 863 advancements
-[20:38:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:38:37] [Server thread/INFO]: Preparing spawn area: 0%
-[20:38:37] [Server thread/INFO]: Preparing spawn area: 0%
-[20:38:37] [Server thread/INFO]: Preparing spawn area: 0%
-[20:38:39] [Server thread/INFO]: Preparing spawn area: 0%
-[20:38:39] [Server thread/INFO]: Preparing spawn area: 0%
-[20:38:39] [Server thread/INFO]: Preparing spawn area: 0%
-[20:38:39] [Server thread/INFO]: Preparing spawn area: 56%
-[20:38:39] [Server thread/INFO]: Time elapsed: 3195 ms
-[20:38:39] [Server thread/INFO]: Done (5.334s)! For help, type "help"
-[20:42:17] [User Authenticator #1/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
-[20:42:18] [Server thread/INFO]: Fretbeirke[/25.117.156.205:52657] logged in with entity id 374 at (243.29338190155144, 64.0, -72.13616909184698)
-[20:42:18] [Server thread/INFO]: Fretbeirke joined the game
-[20:44:27] [Server thread/WARN]: Fretbeirke moved too quickly! 1027.7525384835826,3.233632006042477,-1279.6224822826905
-[20:44:28] [Server thread/INFO]: Scanning for legacy world dragon fight...
-[20:44:28] [Server thread/INFO]: Found that the dragon has been killed in this world already.
-[22:08:41] [Server thread/WARN]: Fretbeirke moved too quickly! 1027.9346337881552,3.233632006042477,-1279.6453627009364
-[22:14:55] [Server thread/WARN]: Fretbeirke moved too quickly! -10.123214319782392,-0.12160004615783748,0.029045977002740975
-[22:38:40] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
-[22:38:40] [Server thread/INFO]: Fretbeirke left the game
-[22:43:01] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 248439ms or 4968 ticks behind
-[23:27:43] [Server thread/INFO]: Stopping the server
-[23:27:43] [Server thread/INFO]: Stopping server
-[23:27:43] [Server thread/INFO]: Saving players
-[23:27:43] [Server thread/INFO]: Saving worlds
-[23:27:43] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
-[23:27:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:27:43] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
-[23:27:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:27:43] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
-[23:27:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[23:27:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23:27:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23:27:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:33:58] [main/ERROR]: Unable to bootstrap registry 'minecraft:chunk_generator_type'
+[11:33:59] [main/ERROR]: Registry 'minecraft:chunk_generator_type' was empty after loading
+[11:34:06] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11:34:06] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11:34:06] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11:34:07] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[11:34:07] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[11:34:07] [Server thread/INFO]: Starting minecraft server version 20w13b
+[11:34:07] [Server thread/INFO]: Loading properties
+[11:34:07] [Server thread/INFO]: Default game type: SURVIVAL
+[11:34:07] [Server thread/INFO]: Generating keypair
+[11:34:09] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:34:09] [Server thread/INFO]: Using default channel type
+[11:34:15] [Server thread/INFO]: Preparing level "world"
+[11:34:15] [Server thread/INFO]: Reloading ResourceManager: Default
+[11:34:18] [Server thread/INFO]: Loaded 6 recipes
+[11:34:19] [Server thread/INFO]: Loaded 863 advancements
+[11:34:22] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:34:24] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:24] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:24] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:24] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:24] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:24] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Preparing spawn area: 0%
+[11:34:31] [Server thread/INFO]: Time elapsed: 9713 ms
+[11:34:31] [Server thread/INFO]: Done (16.701s)! For help, type "help"
+[11:34:58] [User Authenticator #1/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[11:34:59] [Server thread/INFO]: Fretbeirke[/25.117.156.205:61340] logged in with entity id 246 at (-86.13630936609952, 63.0, 21.3325355670438)
+[11:34:59] [Server thread/INFO]: Fretbeirke joined the game
+[11:38:31] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2194ms or 43 ticks behind
+[11:39:36] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2704ms or 54 ticks behind
+[12:02:22] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[12:02:22] [Server thread/INFO]: Fretbeirke left the game
+[12:31:16] [User Authenticator #2/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[12:31:16] [Server thread/INFO]: Fretbeirke[/25.117.156.205:61401] logged in with entity id 4047 at (-931.4479497886181, 68.0, 1265.8720650732964)
+[12:31:16] [Server thread/INFO]: Fretbeirke joined the game
+[12:49:53] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[12:49:53] [Server thread/INFO]: Fretbeirke left the game
+[12:53:45] [User Authenticator #3/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[12:53:45] [Server thread/INFO]: Fretbeirke[/25.117.156.205:52898] logged in with entity id 8446 at (-932.1081105594568, 68.0, 1266.2857885411004)
+[12:53:45] [Server thread/INFO]: Fretbeirke joined the game
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:pumpkin_pile
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:taiga_grass
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:taiga_grass
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:pine_tree
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:pumpkin_pile
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:taiga_grass
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:taiga_grass
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:spruce_tree
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:pumpkin_pile
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:taiga_grass
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:pine_tree
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/WARN]: Error while deserializing minecraft:pine_tree
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:31] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[12:57:32] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2233ms or 44 ticks behind
+[13:05:37] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/11832, l='world', x=251.80, y=60.00, z=-121.17]
+[13:05:52] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/11862, l='world', x=250.67, y=60.00, z=-119.57]
+[13:06:00] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/11880, l='world', x=250.20, y=60.00, z=-121.17]
+[13:08:06] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/12160, l='world', x=250.99, y=60.00, z=-121.17]
+[13:20:24] [Server thread/WARN]: Fretbeirke moved too quickly! 1027.8752068331955,3.233632006042477,-1279.543357814038
+[13:20:25] [Server thread/INFO]: Scanning for legacy world dragon fight...
+[13:20:25] [Server thread/INFO]: Found that the dragon has been killed in this world already.
+[13:35:53] [Server thread/WARN]: Mismatch in destroy block pos: fo{x=-173, y=11, z=262} fo{x=-173, y=10, z=261}
+[13:42:11] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[13:42:11] [Server thread/INFO]: Fretbeirke left the game
+[13:44:58] [User Authenticator #4/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[13:44:58] [Server thread/INFO]: Fretbeirke[/25.117.156.205:53319] logged in with entity id 19879 at (-166.6575239385531, 11.0, 310.14049168075974)
+[13:44:58] [Server thread/INFO]: Fretbeirke joined the game
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:hay_pile
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:plain_flower
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:normal_tree
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:hay_pile
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:hay_pile
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:normal_tree
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:plain_flower
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/WARN]: Error while deserializing minecraft:normal_tree
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[13:58:39] [Server thread/ERROR]: Unknown type , replacing with cru@65887aeb
+[14:07:29] [Server thread/INFO]: Fretbeirke has made the advancement [A Terrible Fortress]
+[14:23:21] [Server thread/WARN]: Mismatch in destroy block pos: fo{x=-214, y=10, z=140} fo{x=-213, y=9, z=141}
+[14:23:21] [Server thread/WARN]: Mismatch in destroy block pos: fo{x=-214, y=10, z=140} fo{x=-213, y=9, z=141}
+[14:23:21] [Server thread/WARN]: Mismatch in destroy block pos: fo{x=-214, y=10, z=140} fo{x=-213, y=9, z=141}
+[14:23:22] [Server thread/WARN]: Mismatch in destroy block pos: fo{x=-214, y=10, z=140} fo{x=-213, y=9, z=141}
+[14:32:30] [Server thread/INFO]: Set Fretbeirke's game mode to Creative Mode
+[14:32:49] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[14:32:49] [Server thread/INFO]: Fretbeirke left the game
+[14:33:37] [User Authenticator #5/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[14:33:37] [Server thread/INFO]: Fretbeirke[/25.117.156.205:54246] logged in with entity id 28947 at (-918.9301137339769, 68.0, 1274.7667289184706)
+[14:33:37] [Server thread/INFO]: Fretbeirke joined the game
+[14:41:37] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/31445, l='world', x=251.80, y=60.00, z=-121.17]
+[14:45:10] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/31993, l='world', x=250.20, y=60.00, z=-119.20]
+[14:47:22] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/32304, l='world', x=250.20, y=60.00, z=-121.17]
+[14:52:40] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/33207, l='world', x=250.20, y=60.00, z=-119.20]
+[14:53:24] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/33342, l='world', x=250.20, y=60.00, z=-119.20]
+[14:58:17] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/34016, l='world', x=250.20, y=60.00, z=-121.17]
+[15:03:27] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/34706, l='world', x=251.80, y=60.00, z=-121.17]
+[15:10:56] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/35771, l='world', x=250.20, y=60.00, z=-121.17]
+[15:14:33] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/36282, l='world', x=250.20, y=60.00, z=-119.20]
+[15:14:53] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/36316, l='world', x=250.20, y=60.00, z=-119.20]
+[15:29:12] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/38323, l='world', x=250.20, y=60.00, z=-121.17]
+[15:33:40] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/38906, l='world', x=250.20, y=60.00, z=-119.20]
+[15:36:43] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/39331, l='world', x=251.80, y=60.00, z=-119.83]
+[15:43:09] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/40344, l='world', x=250.20, y=60.00, z=-119.20]
+[15:44:24] [Server thread/WARN]: Fetching packet for removed entity azh['Cactus'/40496, l='world', x=308.08, y=66.06, z=-16.88]
+[15:49:06] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/41186, l='world', x=251.80, y=60.00, z=-121.17]
+[15:51:14] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/41472, l='world', x=250.20, y=60.00, z=-121.17]
+[15:55:52] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/42196, l='world', x=250.20, y=60.00, z=-119.20]
+[15:56:34] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/42315, l='world', x=250.66, y=60.00, z=-119.83]
+[16:00:58] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/43037, l='world', x=251.71, y=60.00, z=-120.55]
+[16:07:53] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/44167, l='world', x=250.20, y=60.00, z=-121.17]
+[16:09:20] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/44354, l='world', x=251.26, y=60.00, z=-120.90]
+[16:10:21] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/44468, l='world', x=250.78, y=60.00, z=-120.95]
+[16:12:13] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/44750, l='world', x=250.66, y=60.00, z=-119.83]
+[16:19:44] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/45914, l='world', x=250.20, y=60.00, z=-119.20]
+[16:20:04] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/45971, l='world', x=250.20, y=60.00, z=-119.20]
+[16:25:31] [Server thread/WARN]: Fetching packet for removed entity azh['Redstone Dust'/46901, l='world', x=278.43, y=30.65, z=-91.47]
+[16:25:31] [Server thread/WARN]: Fetching packet for removed entity azh['Cobblestone'/46902, l='world', x=278.39, y=27.67, z=-90.75]
+[16:25:31] [Server thread/WARN]: Fetching packet for removed entity azh['Redstone Dust'/46903, l='world', x=278.27, y=30.44, z=-89.63]
+[16:25:31] [Server thread/WARN]: Fetching packet for removed entity azh['Cobblestone'/46904, l='world', x=278.68, y=29.35, z=-89.53]
+[16:25:31] [Server thread/WARN]: Fetching packet for removed entity azh['Lime Wool'/46905, l='world', x=278.30, y=29.66, z=-90.36]
+[16:34:00] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/48314, l='world', x=250.20, y=60.00, z=-120.28]
+[16:35:51] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/48597, l='world', x=251.80, y=60.00, z=-119.83]
+[16:41:48] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/49597, l='world', x=250.78, y=60.00, z=-120.95]
+[16:47:26] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/50510, l='world', x=251.80, y=60.00, z=-121.17]
+[16:53:53] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/51576, l='world', x=250.20, y=60.00, z=-120.28]
+[16:55:46] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/51840, l='world', x=250.20, y=60.00, z=-121.17]
+[17:04:16] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/53253, l='world', x=251.26, y=60.00, z=-120.90]
+[17:06:07] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/53513, l='world', x=250.66, y=60.00, z=-119.83]
+[17:06:30] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/53557, l='world', x=251.17, y=60.00, z=-119.20]
+[17:10:14] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/54117, l='world', x=251.11, y=60.00, z=-120.18]
+[17:28:45] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/57096, l='world', x=251.80, y=60.00, z=-119.83]
+[17:31:31] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/57467, l='world', x=251.80, y=60.00, z=-121.17]
+[17:37:22] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/58294, l='world', x=250.20, y=60.00, z=-119.20]
+[17:37:44] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/58342, l='world', x=250.20, y=60.00, z=-121.17]
+[17:49:28] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/59970, l='world', x=251.80, y=60.00, z=-121.17]
+[17:49:44] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/60006, l='world', x=251.26, y=60.00, z=-120.90]
+[17:52:05] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/60324, l='world', x=251.17, y=60.00, z=-119.20]
+[17:54:57] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/60791, l='world', x=250.20, y=60.00, z=-119.20]
+[18:03:57] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/62076, l='world', x=250.20, y=60.00, z=-120.72]
+[18:04:22] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/62133, l='world', x=250.20, y=60.00, z=-119.20]
+[18:04:24] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/62138, l='world', x=251.80, y=60.00, z=-119.83]
+[18:08:15] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/62769, l='world', x=250.20, y=60.00, z=-121.17]
+[18:25:23] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/65099, l='world', x=250.20, y=60.00, z=-119.20]
+[18:30:20] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/65716, l='world', x=250.20, y=60.00, z=-121.17]
+[18:36:53] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/66589, l='world', x=251.80, y=60.00, z=-121.17]
+[18:38:41] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/66864, l='world', x=250.66, y=60.00, z=-119.83]
+[18:53:16] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[18:53:16] [Server thread/INFO]: Fretbeirke left the game
+[20:09:02] [User Authenticator #6/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[20:09:02] [Server thread/INFO]: Fretbeirke[/25.117.156.205:52014] logged in with entity id 68790 at (274.49273251532344, 4.0, -84.97660090284423)
+[20:09:02] [Server thread/INFO]: Fretbeirke joined the game
+[20:15:37] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/69601, l='world', x=250.66, y=60.00, z=-119.83]
+[20:16:42] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/69757, l='world', x=250.20, y=60.00, z=-121.17]
+[20:17:46] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/69894, l='world', x=250.20, y=60.00, z=-121.17]
+[20:17:56] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/69924, l='world', x=250.20, y=60.00, z=-121.17]
+[20:17:57] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/69925, l='world', x=250.20, y=60.00, z=-121.17]
+[20:20:01] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/70227, l='world', x=250.20, y=60.00, z=-121.17]
+[20:20:57] [User Authenticator #7/INFO]: UUID of player GodofThunderr is 6df934b3-633e-4e9e-a5f2-795ec8e5482f
+[20:20:57] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/misc/composter' in progress file .\world\advancements\6df934b3-633e-4e9e-a5f2-795ec8e5482f.json - it doesn't exist anymore?
+[20:20:58] [Server thread/INFO]: GodofThunderr[/25.117.191.82:51216] logged in with entity id 70346 at (234.93127470165695, 63.0, -85.47774467379793)
+[20:20:58] [Server thread/INFO]: GodofThunderr joined the game
+[20:23:59] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/71088, l='world', x=250.20, y=60.00, z=-121.17]
+[20:23:59] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/71088, l='world', x=250.20, y=60.00, z=-121.17]
+[20:26:32] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/71920, l='world', x=250.20, y=60.00, z=-119.70]
+[20:27:06] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/72066, l='world', x=251.80, y=60.00, z=-121.17]
+[20:29:23] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/72609, l='world', x=250.20, y=60.00, z=-121.17]
+[20:29:32] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/72629, l='world', x=251.17, y=60.00, z=-119.20]
+[20:39:44] [Server thread/INFO]: Set Fretbeirke's game mode to Survival Mode
+[20:47:11] [Server thread/WARN]: Fretbeirke moved too quickly! 1027.868064480811,2.9451066529679224,-1279.724285115858
+[20:52:12] [Server thread/INFO]: GodofThunderr has completed the challenge [Return to Sender]
+[20:52:21] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/79557, l='world', x=251.80, y=60.00, z=-121.17]
+[20:55:34] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/80426, l='world', x=250.20, y=60.00, z=-119.20]
+[20:57:13] [Server thread/WARN]: Fetching packet for removed entity azh['Cobblestone'/80972, l='world', x=322.54, y=61.11, z=-122.08]
+[21:09:30] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/85643, l='world', x=250.20, y=60.00, z=-120.15]
+[21:11:38] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/86128, l='world', x=251.17, y=60.00, z=-119.20]
+[21:11:38] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/86128, l='world', x=251.17, y=60.00, z=-119.20]
+[21:15:14] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[21:15:14] [Server thread/INFO]: Fretbeirke left the game
+[21:31:17] [Server thread/INFO]: GodofThunderr lost connection: Disconnected
+[21:31:17] [Server thread/INFO]: GodofThunderr left the game
+[21:51:30] [User Authenticator #8/INFO]: UUID of player jeroentrachet is 94e36829-b1e0-4b5e-96ec-d108422a5da9
+[21:51:30] [Server thread/WARN]: Ignored advancement 'minecraft:recipes/misc/composter' in progress file .\world\advancements\94e36829-b1e0-4b5e-96ec-d108422a5da9.json - it doesn't exist anymore?
+[21:51:31] [Server thread/INFO]: jeroentrachet[/25.116.187.12:53867] logged in with entity id 88625 at (238.18251275072365, 67.0, -63.10175603387543)
+[21:51:31] [Server thread/INFO]: jeroentrachet joined the game
+[21:52:20] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/88786, l='world', x=251.56, y=60.00, z=-121.17]
+[21:52:44] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/88880, l='world', x=251.19, y=60.00, z=-120.33]
+[21:56:25] [Server thread/INFO]: com.mojang.authlib.GameProfile@4224647e[id=<null>,name=Fretbeirke,properties={},legacy=false] (/25.117.156.205:59806) lost connection: Disconnected
+[21:56:41] [Server thread/INFO]: com.mojang.authlib.GameProfile@332f868d[id=<null>,name=Fretbeirke,properties={},legacy=false] (/25.117.156.205:59850) lost connection: Disconnected
+[21:56:47] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/89455, l='world', x=250.63, y=60.00, z=-121.17]
+[21:57:17] [Server thread/WARN]: Fetching packet for removed entity azh['Air'/89549, l='world', x=251.80, y=60.00, z=-119.83]
+[21:57:31] [User Authenticator #9/INFO]: UUID of player Fretbeirke is c8981680-7d58-440b-adc4-c887d9e9ef86
+[21:57:31] [Server thread/INFO]: Fretbeirke[/25.117.156.205:60004] logged in with entity id 89603 at (38.044113801691715, 75.0, -1.4559895246185637)
+[21:57:31] [Server thread/INFO]: Fretbeirke joined the game
+[21:58:27] [Server thread/INFO]: jeroentrachet lost connection: Disconnected
+[21:58:27] [Server thread/INFO]: jeroentrachet left the game
+[21:58:34] [Server thread/INFO]: Fretbeirke lost connection: Disconnected
+[21:58:34] [Server thread/INFO]: Fretbeirke left the game
+[22:27:34] [Server thread/INFO]: Stopping the server
+[22:27:34] [Server thread/INFO]: Stopping server
+[22:27:34] [Server thread/INFO]: Saving players
+[22:27:34] [Server thread/INFO]: Saving worlds
+[22:27:34] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
+[22:27:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:27:34] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[22:27:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:27:34] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
+[22:27:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:27:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:27:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:27:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
